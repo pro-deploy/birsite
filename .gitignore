@@ -1,0 +1,177 @@
+# WordPress специфичные файлы
+wp-config.php
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/backup-db/
+wp-content/backups/
+wp-content/blogs.dir/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/advanced-cache.php
+wp-content/wp-cache-config.php
+wp-content/plugins/hello.php
+
+# Зависимости
+/node_modules
+/.pnp
+.pnp.js
+/vendor/
+composer.phar
+
+# Тестирование
+/coverage
+.phpunit.result.cache
+
+# Продакшен билды
+/build
+/dist
+/public/build
+/public/dist
+
+# Env файлы
+.env
+.env.*
+.env.local
+
+# Логи
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+/wp-content/debug.log
+error_log
+access_log
+
+# IDE и редакторы
+/.idea
+/.vscode
+*.swp
+*.swo
+*~
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.php_cs.cache
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+desktop.ini
+
+# Python (если используется)
+*.py[cod]
+__pycache__/
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Java (если используется)
+*.class
+*.jar
+*.war
+*.ear
+*.logs
+*.iml
+.gradle/
+target/
+
+# Временные файлы
+*.log
+*.tmp
+*.temp
+*.bak
+.sass-cache
+*.swp
+*.swo
+
+# Файлы конфигурации
+*.config
+wp-cli.local.yml
+local-config.php
+.htaccess
+
+# Файлы баз данных
+*.sql
+*.sqlite
+*.sqlite3
+
+# Файлы загрузок и медиа
+uploads/
+media/
+wp-content/uploads/*
+!wp-content/uploads/.htaccess
+
+# Кеш и временные файлы
+/cache
+/tmp
+wp-content/cache/
+wp-content/backups/
+
+# Архивы и сжатые файлы
+*.zip
+*.gz
+*.tar
+*.rar
+*.7z
+
+# Файлы сертификатов и ключей
+*.crt
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Документация и метафайлы
+/docs
+*.pdf
+*.doc
+*.docx
+*.xls
+*.xlsx
+
+# Специфичные файлы WordPress
+sitemap.xml
+sitemap.xml.gz
+wp-content/advanced-cache.php
+wp-content/backup-db/
+wp-content/backups/
+wp-content/blogs.dir/
+wp-content/upgrade/
+wp-content/wp-cache-config.php
+
+# Зависимости фронтенда
+bower_components/
+.bower-cache
+.bower-registry
+.bower-tmp
+
+# Файлы оптимизации и компиляции
+*.min.css
+*.min.js
+/dist
+/build
+
+# Локальные конфиги разработки
+config.local.js
+config.dev.js
+webpack.local.js
