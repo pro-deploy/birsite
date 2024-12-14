@@ -45,8 +45,6 @@ services:
       - ./wp-content/plugins:/var/www/html/wp-content/plugins:rw
       - ./wp-content/uploads:/var/www/html/wp-content/uploads:rw
     environment:
-      - VIRTUAL_HOST=${DOMAIN}
-      - LETSENCRYPT_HOST=${DOMAIN}
       - WORDPRESS_DB_HOST=${DB_HOST}:${DB_PORT}
       - WORDPRESS_DB_NAME=${DB_NAME}
       - WORDPRESS_DB_USER=${DB_USER}
@@ -54,8 +52,6 @@ services:
       - WORDPRESS_TABLE_PREFIX=${DB_PREFIX}
       - WORDPRESS_DEBUG=${WP_DEBUG}
       - WORDPRESS_CONFIG_EXTRA=|
-          define('WP_HOME', '${WP_HOME}');
-          define('WP_SITEURL', '${WP_SITEURL}');
           define('FS_METHOD', '${FS_METHOD}');
       - WORDPRESS_AUTH_KEY=${WP_AUTH_KEY}
       - WORDPRESS_SECURE_AUTH_KEY=${WP_SECURE_AUTH_KEY}
