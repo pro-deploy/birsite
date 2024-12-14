@@ -14,7 +14,7 @@ services:
       - html:/usr/share/nginx/html
       - ./nginx/conf.d:/etc/nginx/conf.d:ro
     labels:
-      - "com.github.nginx-proxy.nginx"
+      com.github.nginx-proxy.nginx: true
     networks:
       - wordpress_external
 
